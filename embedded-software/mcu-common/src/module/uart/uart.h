@@ -57,11 +57,11 @@
 
 	#if defined(ITRI_DBG_PRINT)
 		#define DEBUG_PRINTF_EX(...) { 		\
-			char msg[512];					\
+			char msg[128];					\
 			sprintf(msg, __VA_ARGS__);		\
 			UART_vWrite((const uint8_t*)msg); }
 		#define DBG_PRINTF(...) { 		\
-			char msg[512];					\
+			char msg[128];					\
 			sprintf(msg, __VA_ARGS__);		\
 			sprintf(msg, "[%s:%d]%s", __FILE__, __LINE__, msg);	\
 			UART_vWrite((const uint8_t*)msg); }

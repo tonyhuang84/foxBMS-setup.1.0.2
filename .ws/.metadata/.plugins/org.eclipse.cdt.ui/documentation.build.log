@@ -1,4 +1,4 @@
-09:46:46 **** Build of configuration sphinx for project documentation ****
+16:13:42 **** Incremental Build of configuration sphinx for project documentation ****
 python "D:\\itri\\foxBMS\\src\\foxBMS-setup\\.ws/../build.py" --sphinx 
 Setting top to                           : D:\itri\foxBMS\src\foxBMS-setup 
 Setting out to                           : D:\itri\foxBMS\src\foxBMS-setup\build\sphinx 
@@ -23,8 +23,8 @@ arm-none-eabi-ranlib RANLIB
 Checking for program 'arm-none-eabi-ranlib'  : C:\foxconda\Library\bin\arm-none-eabi-ranlib.exe 
 arm-none-eabi-as AS
 Checking for program 'arm-none-eabi-as'      : C:\foxconda\Library\bin\arm-none-eabi-as.exe 
-Basename:     foxbms-1.0-f499170-20180207014651-debug
-Prefix:       foxbms-1.0-f499170-20180207014651
+Basename:     foxbms-1.0-843fd5c-20180207081345-debug
+Prefix:       foxbms-1.0-843fd5c-20180207081345
 CFLAGS:       -mcpu=cortex-m4
               -mthumb
               -mlittle-endian
@@ -49,22 +49,13 @@ CFLAGS:       -mcpu=cortex-m4
               -DHSE_VALUE=8000000
               -g
               -O0
-'configure' finished successfully (3.283s)
+'configure' finished successfully (1.600s)
 Waf: Entering directory `D:\itri\foxBMS\src\foxBMS-setup\build\sphinx'
 ['D:\\itri\\foxBMS\\src\\foxBMS-setup\\_ext', 'D:\\itri\\foxBMS\\src\\foxBMS-setup', 'D:\\itri\\foxBMS', 'D:\\itri\\foxBMS\\src\\foxBMS-setup\\tools\\waf-1.9.13-c6a32c41574b7fba5e65e4e7336fbc53', 'D:\\itri\\foxBMS\\src\\foxBMS-setup\\tools', 'D:\\tony\\Dropbox\\Public\\code\\python\\ITRI\\bSim_p', 'C:\\foxconda\\python27.zip', 'C:\\foxconda\\DLLs', 'C:\\foxconda\\lib', 'C:\\foxconda\\lib\\plat-win', 'C:\\foxconda\\lib\\lib-tk', 'C:\\foxconda', 'C:\\foxconda\\lib\\site-packages', 'C:\\foxconda\\lib\\site-packages\\Babel-2.5.0-py2.7.egg', 'C:\\foxconda\\lib\\site-packages\\win32', 'C:\\foxconda\\lib\\site-packages\\win32\\lib', 'C:\\foxconda\\lib\\site-packages\\Pythonwin', 'C:\\foxconda\\lib\\site-packages\\wx-3.0-msw']
-Wed Feb 07 09:46:51 2018 Time zone not defined
-[1/1] Processing sphinx_build [html]: documentation\doc\sphinx\general_information\licenses\licenses.rst documentation\doc\sphinx\general_information\motivation\motivation.rst documentation\doc\sphinx\general_information\overview\overview.rst documentation\doc\sphinx\general_information\releases\releases.rst documentation\doc\sphinx\general_information\roadmap\roadmap.rst documentation\doc\sphinx\general_information\safety\safety.rst documentation\doc\sphinx\general_information\team\team.rst documentation\doc\sphinx\getting_started\build\build.rst documentation\doc\sphinx\getting_started\cabling\cabling.rst documentation\doc\sphinx\getting_started\checking\checking.rst documentation\doc\sphinx\getting_started\communicating\communicating.rst documentation\doc\sphinx\getting_started\connectors\connectors.rst documentation\doc\sphinx\getting_started\eclipse_workspace\eclipse_workspace.rst documentation\doc\sphinx\getting_started\foxconda\foxconda.rst documentation\doc\sphinx\getting_started\general\general.rst documentation\doc\sphinx\hardware_documentation\bjb\bjb.rst documentation\doc\sphinx\hardware_documentation\components\components.rst documentation\doc\sphinx\hardware_documentation\design_resources\design_resources.rst documentation\doc\sphinx\hardware_documentation\overview\overview.rst documentation\doc\sphinx\hardware_documentation\slave_v1.x\slave_12cell_v1_x.rst documentation\doc\sphinx\hardware_documentation\slave_v2.x\slave_12cell_v2_x.rst documentation\doc\sphinx\hardware_documentation\specifications\specifications.rst documentation\doc\sphinx\hardware_documentation\toolchain\toolchain.rst documentation\doc\sphinx\index.rst documentation\doc\sphinx\macros.rst documentation\doc\sphinx\software_documentation\build-process\build-process.rst documentation\doc\sphinx\software_documentation\components\components.rst documentation\doc\sphinx\software_documentation\defines\defines.rst documentation\doc\sphinx\software_documentation\faq\faq.rst documentation\doc\sphinx\software_documentation\modules\balancing\balancing.rst documentation\doc\sphinx\software_documentation\modules\bms\bms.rst documentation\doc\sphinx\software_documentation\modules\can\can.rst documentation\doc\sphinx\software_documentation\modules\cansignal\cansignal.rst documentation\doc\sphinx\software_documentation\modules\chksum\chksum.rst documentation\doc\sphinx\software_documentation\modules\com\com.rst documentation\doc\sphinx\software_documentation\modules\contactor\contactor.rst documentation\doc\sphinx\software_documentation\modules\diag\diag.rst documentation\doc\sphinx\software_documentation\modules\interlock\interlock.rst documentation\doc\sphinx\software_documentation\modules\io\io.rst documentation\doc\sphinx\software_documentation\modules\isoguard\isoguard.rst documentation\doc\sphinx\software_documentation\modules\ltc\ltc.rst documentation\doc\sphinx\software_documentation\modules\modules.rst documentation\doc\sphinx\software_documentation\modules\nvm\nvm.rst documentation\doc\sphinx\software_documentation\modules\sox\sox.rst documentation\doc\sphinx\software_documentation\modules\sys\sys.rst documentation\doc\sphinx\software_documentation\modules\uart\uart.rst documentation\doc\sphinx\software_documentation\overview\overview.rst documentation\doc\sphinx\software_documentation\styleguide\styleguide.rst documentation\doc\sphinx\software_documentation\tools\checksum\checksum.rst documentation\doc\sphinx\software_documentation\tools\flashtool\flashtool.rst documentation\doc\sphinx\software_documentation\tools\tools.rst documentation\doc\sphinx\conf.py -> build\sphinx\documentation\doc\sphinx\html
-
-
-['C:\\foxconda\\Scripts\\sphinx-build.exe', '-c', 'D:\\itri\\foxBMS\\src\\foxBMS-setup\\documentation\\doc\\sphinx', '-D', 'version=1.0', '-D', 'release=1.0', '-q', '-b', 'html', '-d', 'D:\\itri\\foxBMS\\src\\foxBMS-setup\\build\\sphinx\\documentation\\doc\\sphinx\\html\\.doctrees', 'D:\\itri\\foxBMS\\src\\foxBMS-setup\\documentation\\doc\\sphinx', 'D:\\itri\\foxBMS\\src\\foxBMS-setup\\build\\sphinx\\documentation\\doc\\sphinx\\html']
-out: ['D:\\itri\\foxBMS\\src\\foxBMS-setup\\documentation\\doc\\sphinx\\_ext', 'D:\\itri\\foxBMS\\src\\foxBMS-setup\\documentation\\doc\\sphinx', 'D:\\itri\\foxBMS\\src\\foxBMS-setup\\documentation', 'C:\\foxconda\\Scripts', 'D:\\tony\\Dropbox\\Public\\code\\python\\ITRI\\bSim_p', 'C:\\foxconda\\python27.zip', 'C:\\foxconda\\DLLs', 'C:\\foxconda\\lib', 'C:\\foxconda\\lib\\plat-win', 'C:\\foxconda\\lib\\lib-tk', 'C:\\foxconda', 'C:\\foxconda\\lib\\site-packages', 'C:\\foxconda\\lib\\site-packages\\Babel-2.5.0-py2.7.egg', 'C:\\foxconda\\lib\\site-packages\\win32', 'C:\\foxconda\\lib\\site-packages\\win32\\lib', 'C:\\foxconda\\lib\\site-packages\\Pythonwin', 'C:\\foxconda\\lib\\site-packages\\wx-3.0-msw']
-
-Wed Feb 07 09:46:55 2018 Time zone not defined
-
-
+Wed Feb 07 16:13:45 2018 Time zone not defined
 Waf: Leaving directory `D:\itri\foxBMS\src\foxBMS-setup\build\sphinx'
-'sphinx' finished successfully (7.891s)
+'sphinx' finished successfully (0.270s)
 INFO:root:Success: Process return code 0
 
-09:46:59 Build Finished (took 13s.72ms)
+16:13:45 Build Finished (took 3s.393ms)
 

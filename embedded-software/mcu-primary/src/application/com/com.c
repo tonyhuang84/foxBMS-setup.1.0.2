@@ -132,7 +132,7 @@ void COM_StartupInfo(void) {
 typedef uint32_t (*rb_cmd_funcPtr)(char* params);
 
 uint32_t rb_cmd_test1(char* params) {
-	DEBUG_PRINTF_EX("DEBUG_PRINTF_EX test, int(%d), hex(0x%02X), char(%c), str(%s)\r\n", 123, 16, "A", "abc");
+	DEBUG_PRINTF_EX("DEBUG_PRINTF_EX test, int(%d), hex(0x%02X), str(%s)\r\n", 123, 16, "A", "abc");
 	return 0;
 }
 
@@ -146,10 +146,11 @@ RB_CMD_s rb_cmds[] = {
 	{"test1", "", &rb_cmd_test1},
 };
 
-uint32_t exe_rb_cmd(com_receivedbyte) {
+uint32_t exe_rb_cmd(char* com_receivedbyte) {
 	uint32_t i, cmd_len = sizeof(rb_cmds) / sizeof(rb_cmds[0]);
 	char* pCmd = strtok(com_receivedbyte, " ");
 
+	//DEBUG_PRINTF_EX("in_cmd:%s cmd:%s\r\n", pCmd, rb_cmds[0].cmd)
 	for (i=0; i < cmd_len; i++) {
 		if (strcmp(pCmd, rb_cmds[i].cmd) == 0) {
 			rb_cmds[i].cmdFunc(com_receivedbyte);
@@ -217,10 +218,14 @@ void COM_printHelpCommand(void) {
 
         case 7:
 #if defined(ITRI_MOD_1)
-			static uint8_t rb_cmd_idx = 0;
-			DEBUG_PRINTF_EX("%s => %s\r\n", rb_cmds[0], rb_cmds[1]);
-			rb_cmd_idx++;
-			if (rb_cmd_idx >= sizeof(rb_cmds)/sizeof(rb_cmds[0])) cnt--;
+        	{
+				static uint8_t rb_cmd_idx = 0;
+				DEBUG_PRINTF_EX("%s => %s\r\n", rb_cmds[rb_cmd_idx].cmd, rb_cmds[rb_cmd_idx].desc);
+				rb_cmd_idx++;
+				if (rb_cmd_idx < sizeof(rb_cmds)/sizeof(rb_cmds[0])) cnt--;
+				else rb_cmd_idx = 0;
+				//DEBUG_PRINTF_EX("idx:%d cnt:%d\r\n", rb_cmd_idx, cnt);
+        	}
 #else
 			DEBUG_PRINTF((const uint8_t * )"==========================  ==========================================================================================\r\n");
 #endif
